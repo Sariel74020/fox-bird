@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>镌刻时光的印记</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,900&display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/videoStyle.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fenxiang.css" />
+    <style>
+      .wrapper {
+        position: fixed;
+        left: 50%;
+        bottom: 10%;
+        transform: translate(-50%, 0%);
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero">
+      <h1 class="h1">和你相伴的桩桩件件，会越来越清晰。</h1>
+      <a
+        href="../music/2.5.mp4"
+        style="color: lightpink; margin-left: 30px; font-size: 25px;"
+        class="btn"
+        >接着我们去看冰岛的极光吧。</a
+      >
+
+      <!-- 测试开始 -->
+      <div class="wrapper">
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-weixin"></i>
+          </div>
+          <a
+            href="http://39.98.197.12:8080/birthday_wishes-master/img/weixin.jpg"
+            target="_blank"
+            >微信</a
+          >
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-qq"></i>
+          </div>
+          <a
+            href="http://39.98.197.12:8080/birthday_wishes-master/img/qq.jpg"
+            target="_blank"
+            >QQ</a
+          >
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <a href="www.Instagram.com" target="_blank">Instagram</a>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-tumblr-square"></i>
+          </div>
+          <a
+            href="http://39.98.197.12:8080/birthday_wishes-master/img/douyin.jpg"
+            target="_blank"
+            >抖音</a
+          >
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-weibo"></i>
+          </div>
+          <a href="https://weibo.com" target="_blank">微博</a>
+        </div>
+      </div>
+      <!-- 测试结束 -->
+
+      <video class="video-bg" autoplay loop src="../music/2.5.mp4.">
+        <!-- <source type="video/mp4"> -->
+      </video>
+    </div>
+    <!-- <section class="intro">
+        <h2 class="intro">1111111111111</h2>
+        <div class="row">
+            <div class="col">
+                <p>
+                    22222222222222222222333
+                </p>
+            </div>
+            <div class="col">
+                <p>
+                    44444444444444444444
+                </p>
+            </div>
+        </div>
+    </section> -->
+    <script>
+      let i = 1;
+      const btn = document.querySelector(".btn");
+      const h1 = document.querySelector(".h1");
+      const bg = document.querySelector(".video-bg");
+      btn.addEventListener("click", (e) => {
+    
+        e.preventDefault();
+        if (i === 1) {
+          h1.innerText = "如果有时间，自然带你来看。";
+          bg.src = "../music/newvideo.mp4";
+          btn.innerText = "不妨猜猜下一个地点？";
+          i++;
+        } else if (i === 2) {
+          h1.innerText = "听听海浪的声音，今晚睡个好觉。";
+          bg.src = "../music/sea.mp4";
+          btn.innerText = "那么接着走？";
+          i++;
+        } else if (i === 3) {
+          h1.innerText = "从你出现时我就知道，心动从来是你的味道，有时间试试调香吧。";
+          bg.src = "../music/perfume.mp4";
+          btn.innerText = "猜对的话奖励一个拥抱。";
+          i++;
+        } else if (i === 4) {
+          h1.innerText =
+            "和你相处越久，也不自觉沾染你喜欢搭配茶点的习惯。";
+          bg.src = "../music/tea.mp4";
+          btn.innerText = "下一个，是你的最爱。";
+          i++;
+        } else if (i === 5) {
+          h1.innerText =
+            "好了，垂涎三尺也不准多吃。";
+          bg.src = "../music/junkfood.mp4";
+          btn.innerText = "在期待下一个？不告诉你。"
+          i++;
+        } else if (i === 6) {
+          h1.innerText = 
+            "有你在身边的每一天，都很快乐。";
+          bg.src = "../music/birthday.mp4";
+          btn.innerText="走了，去看看我们的回忆。"
+          i++;
+        } else if (i === 7) {
+           location.href = "../html/memory.html";
+        }
+      });
+    </script>
+    <audio src="../music/1.mp3" autoplay="autoplay" loop="loop"></audio>
+  </body>
+</html>

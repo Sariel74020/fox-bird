@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/navigator.css" />
+    <title>立体导航栏</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li class="tiaozhuan">祝福</li>
+          <li class="tiaozhuan">烟花</li>
+          <li class="tiaozhuan">关键词</li>
+          <li class="tiaozhuan">我们</li>
+          <li class="tiaozhuan">听歌</li>
+        </ul>
+      </nav>
+    </div>
+
+    <script>
+      const btn = document.querySelectorAll(".tiaozhuan");
+      console.log(btn);
+      for (var z = 0; z < btn.length; z++) {
+        if (z == 0) {
+          document
+            .querySelectorAll(".tiaozhuan")
+            [z].addEventListener("click", (e) => {
+              e.preventDefault();
+              location.href = "./Memories.html";
+            });
+        } else if (z == 1) {
+          document
+            .querySelectorAll(".tiaozhuan")
+            [z].addEventListener("click", (e) => {
+              e.preventDefault();
+              location.href = "./yanhua1.html";
+            });
+        } else if (z == 2) {
+          document
+            .querySelectorAll(".tiaozhuan")
+            [z].addEventListener("click", (e) => {
+              e.preventDefault();
+              location.href = "./memory.html";
+            });
+        } else if (z == 3) {
+          document
+            .querySelectorAll(".tiaozhuan")
+            [z].addEventListener("click", (e) => {
+              e.preventDefault();
+              location.href = "./we.html";
+            });
+        } else if (z == 4) {
+          document
+            .querySelectorAll(".tiaozhuan")
+            [z].addEventListener("click", (e) => {
+              e.preventDefault();
+              location.href = "./song.html";
+            });
+        }
+      }
+
+      //   let i = 1;
+      //   var a1 = "./Memories.html";
+      //   var a2 = "./yanhua1.html";
+      //   var a3 = "./memory.html";
+      //   var a4 = "./we.html";
+      //   var a5 = "./song.html";
+      // else if (z == 1)
+      //   document.querySelectorAll(".tiaozhuan")[i].location.href = a2;
+      // else if (z == 2)
+      //   document.querySelectorAll(".tiaozhuan")[i].location.href = a3;
+      // else if (z == 3)
+      //   document.querySelectorAll(".tiaozhuan")[i].location.href = a4;
+      // else if (z == 4)
+      //   document.querySelectorAll(".tiaozhuan")[i].location.href = a5;
+
+      //   btn.addEventListener("click", (e) => {
+      //     e.preventDefault();
+      //     if (i === 1) {
+      //       location.href = "./Memories.html";
+      //       btn.style.targer = "blank";
+      //     }
+      //   });
+    </script>
+  </body>
+</html>
